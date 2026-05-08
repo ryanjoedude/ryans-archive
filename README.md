@@ -1,5 +1,5 @@
-# ryans-archive
-music archive project
+# Ryan's Archive
+Music archive project
 by Ryan J. Brady
 5/6/2026
 
