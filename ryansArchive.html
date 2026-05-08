@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ryan's Archive</title>
+		<link href="musicView.css" type="text/css" rel="stylesheet" />
+        <script src="dragdrop.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+        <h1>Ryan's Archive</h1>
+        <h2>A collection of the best albums from some of the best genres in music.</h2>
+        <div class="genre">
+            <h2>Mathrock</h2>
+            <div class="albums" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+            <a href="albums/american-don.html" class="page">
+                <div id="americandon" class="albumcard" draggable="true" ondragstart="dragstartHandler(event)">
+                    <img src="images/don.jpg" alt="Album Cover">
+                    <h3>American Don</h3>
+                    <p>Don Caballero</p>
+                </div>
+            </a>
+            <a href="albums/analpha.html" class="page">
+                <div id="analpha" class="albumcard" draggable="true" ondragstart="dragstartHandler(event)">
+                    <img src="images/capn.jpg" alt="Album Cover">
+                    <h3>Analphabetapolothology</h3>
+                    <p>Cap'n Jazz</p>
+                </div>
+            </a>
+            <a href="albums/hold-your-horse-is.html" class="page">
+                <div id="holdyour" class="albumcard" draggable="true" ondragstart="dragstartHandler(event)">
+                    <img src="images/hella.jpg" alt="Album Cover">
+                    <h3>Hold Your Horse Is</h3>
+                    <p>Hella</p>
+                </div>
+            </a>
+            </div>
+        </div>
+
+        <div class="genre">
+            <h2>Alternative</h2>
+            <div class="albums" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+                <a href="albums/gish.html" class="page">
+                <div id="gish" class="albumcard" draggable="true" ondragstart="dragstartHandler(event)">
+                    <img src="images/sp.jpg" alt="Album Cover">
+                    <h3>Gish</h3>
+                    <p>The Smashing Pumpkins</p>
+                </div>
+                </a>
+                <a href="albums/where-you-been.html" class="page">
+                <div id="whereyoubeen" class="albumcard" draggable="true" ondragstart="dragstartHandler(event)">
+                    <img src="images/dino.jpg" alt="Album Cover">
+                    <h3>Where You Been</h3>
+                    <p>Dinosaur Jr.</p>
+                </div>
+                </a>
+                <a href="albums/keep-it.html" class="page">
+                <div id="keepit" class="albumcard" draggable="true" ondragstart="dragstartHandler(event)">
+                    <img src="images/bts.webp" alt="Album Cover">
+                    <h3>Keep it Like a Secret</h3>
+                    <p>Built to Spill</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- JAZZ SECTION -->
+        <div class="genre">
+            <h2>Jazz</h2>
+            <div class="albums" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+                <a href="albums/birth.html" class="page">
+                <div id="birth" class="albumcard" draggable="true" ondragstart="dragstartHandler(event)">
+                    <img src="images/miles.jpg" alt="Album Cover">
+                    <h3>Birth of the Cool</h3>
+                    <p>Miles Davis</p>
+                </div>
+                </a>
+                <a href="albums/mingus.html" class="page">
+                <div id="mingus" class="albumcard" draggable="true" ondragstart="dragstartHandler(event)">
+                    <img src="images/mingus.jpg" alt="Album Cover">
+                    <h3>Mingus Ah Um</h3>
+                    <p>Charles Mingus</p>
+                </div>
+                </a>
+                <a href="albums/everything.html" class="page">
+                <div id="everything" class="albumcard" draggable="true" ondragstart="dragstartHandler(event)">
+                    <img src="images/everything.jpg" alt="Album Cover">
+                    <h3>Everything But the Girl</h3>
+                    <p>Everything But the Girl</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="genre">
+            <h2>Shoegaze</h2>
+            <div class="albums" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+                <a href="albums/delaware.html" class="page">
+                <div div="delaware" class="albumcard" draggable="true" ondragstart="dragstartHandler(event)">
+                    <img src="images/drop.jpg" alt="Album Cover">
+                    <h3>Delaware</h3>
+                    <p>Drop Nineteens</p>
+                </div>
+                </a>
+                <a href="albums/pinkshiny.html" class="page">
+                <div id="pinkshiny" class="albumcard" draggable="true" ondragstart="dragstartHandler(event)">
+                    <img src="images/astro.jpg" alt="Album Cover">
+                    <h3>pinkshinyultrablast</h3>
+                    <p>Astrobrite</p>
+                </div>
+                </a>
+                <a href="mezcal-head.html" class="page">
+                <div id="mezcalhead" class="albumcard" draggable="true" ondragstart="dragstartHandler(event)">
+                    <img src="images/swerve.jpg" alt="Album Cover">
+                    <h3>Mezcal Head</h3>
+                    <p>Swervedriver</p>
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="recommend">
+            <h2>Recommend an Album</h2>
+            <form action="recommend.php" method="POST">
+                Artist Name: <input type="text" name="artist" required /><br />
+                Album Name:  <input type="text" name="album" required /><br />
+                <input type="submit" value="Recommend It!" />
+            </form>
+        </div>
+
+	</body>
+</html>

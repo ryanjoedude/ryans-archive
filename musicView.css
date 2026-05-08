@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+h1 {
+    text-decoration: underline green 5px;
+}
+
+.genre {
+    padding: 20px;
+}
+
+.genre h2 {
+    margin-bottom: 10px;
+    text-decoration: underline green 5px;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    background-color: teal;
+}
+
+.albumcard {
+    width: 300px;
+    height: 300px;
+    border: 8px ridge;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: #1e1e1e;
+}
+
+.albumcard img {
+    width: 200px;
+    height: 200px;
+}
+
+.albumcard h3 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.albumcard p {
+    font-size: 17px;
+    color: white;
+}
+
+.albumcard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.recommend {
+    padding-bottom: 30px;
+}
+
+.recommend h2 {
+    color: green;
+}
+
+.page {
+    text-decoration: none;
+    color: inherit;
+}
+
+.albumpage {
+    padding: 30px;
+}
+
+.albumcover {
+    width: 400px;
+    height: 400px;
+    margin: 20px 0;
+}
+
+.description {
+    max-width: 600px;
+
+}
